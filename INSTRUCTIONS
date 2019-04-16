@@ -1,0 +1,17 @@
+ADDLW k       // Add Literal and W    --->> W = w + k
+ADDWF f,d     // Add W and f          --->> d = W + f
+ANDLW k       // And Literal with W   --->> W = W AND k
+ANDWF f,d     // And W with f         --->> d = W AND f
+BCF f,b       // Bit Clear f          --->> f(b) = 0
+BSF f,b       // Bit Set f            --->> f(b) = 1
+BTFSC f,b     // Bit Test f, Skip if Clear  --->> f(b) = 0? If, Skip Function..
+BTFSS f,b     // Bit Test f, Skip if Set    --->> f(b) = 1? If, Skip Function..
+CALL k        // Subroutine Call      --->> Call to the Subroutine on direction k
+CLRF f        // Clear f              --->> f = 0
+CLRW          // Clear W Register     --->> W = 0
+CLRWDT        // Clear Watchdog Timer --->> Watchdog timer = 0
+COMF f,d      // Complement f         --->> d = NOT f
+DECF f,d      // Decrement f          --->> d = f - 1
+DECFSZ f,d    // Decrementf, Skip if 0      ---->> d = f - 1 = 0??If, Skip Function..
+GOTO k        // Go to address        --->> Jump to the direction k 
+INCF f,d
